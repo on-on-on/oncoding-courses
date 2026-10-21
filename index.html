@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>개강 과정 안내 | 온코딩컴퓨터학원</title>
+<meta name="description" content="부산 강서구 명지 온코딩컴퓨터학원 국민내일배움카드 국비과정 개강 일정과 수업 시간을 확인하고 고용24에서 신청하세요.">
+<meta property="og:title" content="개강 과정 안내 | 온코딩컴퓨터학원">
+<meta property="og:description" content="국민내일배움카드 국비과정 개강 일정 · 수업 시간 안내">
+<meta property="og:image" content="hero.jpg">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;800&display=swap">
+<style>
+/* Layout: 1080px 단일 칼럼. 텍스트+교실 사진 히어로 → 과정 카드 그리드 → 신청 순서 → 문의 */
+:root{
+  --bg:#FFFFFF;
+  --bg-alt:#F5F5F7;
+  --card:#FFFFFF;
+  --fg:#1D1D1F;
+  --fg-sub:#6E6E73;
+  --line:rgba(0,0,0,.08);
+  --brand:#205072;
+  --brand-ink:#FFFFFF;
+  --brand-soft:rgba(32,80,114,.10);
+  --shadow:0 1px 2px rgba(0,0,0,.04),0 8px 28px rgba(0,0,0,.06);
+  --font:"Pretendard","Pretendard Variable","Noto Sans KR",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --r-card:20px;
+}
+:root{color-scheme:light}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+html,body{margin:0}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:17px;line-height:1.6;letter-spacing:-.01em;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:anywhere}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{margin:0;text-wrap:balance;letter-spacing:-.025em}
+p{margin:0}
+:focus-visible{outline:3px solid var(--brand);outline-offset:3px;border-radius:8px}
+
+/* header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:transparent;transition:background .35s}
+body.scrolled::before{background:var(--bg)}
+header{position:fixed;left:0;right:0;top:env(safe-area-inset-top,0px);z-index:5;background:transparent;border-bottom:1px solid transparent;transition:background .35s,border-color .35s}
+header .bar{height:76px;transition:height .35s}
+header .logo{background:var(--brand)}
+header .bar nav{color:var(--fg);font-weight:500}
+header .bar nav a:hover{color:var(--brand)}
+header.solid{background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);border-bottom-color:var(--line)}
+header.solid .bar{height:60px}
+header.solid .logo{background:var(--brand)}
+header.solid .bar nav{color:var(--fg-sub)}
+header.solid .bar nav a:hover{color:var(--fg)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
+.logo{display:block;width:150px;aspect-ratio:1458/380;max-width:100%;background:var(--brand);-webkit-mask:url(logo.png) center/contain no-repeat;mask:url(logo.png) center/contain no-repeat}
+.bar nav{display:flex;gap:22px;font-size:15px;color:var(--fg-sub)}
+.bar nav a{text-decoration:none}
+.bar nav a:hover{color:var(--fg)}
+@media (max-width:560px){.bar nav a.opt{display:none}}
+
+/* hero */
+.hero{padding-block:72px 88px}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+.eyebrow{font-size:15px;font-weight:700;color:var(--brand);letter-spacing:.02em;margin-bottom:14px}
+.hero h1{font-size:clamp(44px,7vw,72px);line-height:1.1;font-weight:800}
+.hero .lead{margin-top:20px;font-size:19px;color:var(--fg-sub);max-width:30em}
+.next{margin-top:36px;display:flex;flex-wrap:wrap;gap:12px 28px}
+.next div{display:flex;flex-direction:column}
+.next b{font-size:28px;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.next span{font-size:14px;color:var(--fg-sub)}
+.hero-cta{margin-top:36px;display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+.photo{border-radius:28px;overflow:hidden;aspect-ratio:1/1;max-width:100%;background:var(--bg-alt)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+@media (max-width:820px){.hero{padding-block:40px 64px}.hero-grid{grid-template-columns:1fr;gap:36px}.photo{aspect-ratio:4/3}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:999px;background:var(--brand);color:var(--brand-ink);font-weight:700;font-size:16px;text-decoration:none;border:0;cursor:pointer;transition:filter .15s}
+.btn:hover{filter:brightness(1.1)}
+.link{color:var(--brand);font-weight:600;font-size:16px;text-decoration:none;white-space:nowrap}
+.link:hover{text-decoration:underline}
+
+/* courses */
+.courses{background:var(--bg);padding-block:56px 128px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.sec-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 32px;margin-bottom:56px}
+.sec-head h2{font-size:clamp(32px,4.4vw,48px);font-weight:800;line-height:1.2}
+.sec-head p{color:var(--fg-sub);margin-top:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:40px;padding:0 18px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);font:inherit;font-size:15px;font-weight:600;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+@media (max-width:980px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.grid{grid-template-columns:1fr}.courses{padding-block:40px 88px}}
+
+.card{background:var(--card);border-radius:var(--r-card);box-shadow:var(--shadow);padding:30px;display:flex;flex-direction:column;gap:18px;min-width:0}
+.card-top{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 12px;border-radius:999px;font-size:13px;font-weight:700;background:var(--brand-soft);color:var(--brand)}
+.badge.hot{background:var(--brand);color:var(--brand-ink)}
+.badge::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.tag{font-size:13px;color:var(--fg-sub);font-weight:500}
+.card h3{font-size:25px;line-height:1.34;font-weight:800;letter-spacing:-.03em}
+.card h3 .sub{display:block;margin-top:4px;font-size:17px;font-weight:500;color:var(--fg-sub);letter-spacing:-.01em}
+.flag{font-size:13px;font-weight:600;color:var(--brand);margin-top:-6px}
+.spec{margin:auto 0 0;display:grid;grid-template-columns:auto 1fr;border-top:1px solid var(--line)}
+.spec dt,.spec dd{margin:0;padding:13px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.spec dt{font-size:15px;color:var(--fg-sub);padding-right:20px;white-space:nowrap}
+.spec dd{font-size:17px;font-weight:600;line-height:1.45}
+.spec dd span{display:block;font-size:14px;font-weight:400;color:var(--fg-sub)}
+.slot-chip{display:inline-flex;align-items:center;height:28px;padding:0 12px;border-radius:999px;background:var(--bg-alt);color:var(--fg);font-size:13px;font-weight:700}
+.fund-line{font-size:14px;color:var(--fg-sub);margin-top:-4px}
+.row small{display:block;font-size:13px;font-weight:600;color:var(--fg-sub);margin-bottom:2px}
+.row b{display:block;font-size:26px;font-weight:800;letter-spacing:-.03em;line-height:1.25;font-variant-numeric:tabular-nums}
+.row span{display:block;font-size:15px;color:var(--fg-sub);font-variant-numeric:tabular-nums}
+.slot{display:inline-block;margin-left:6px;padding:1px 9px;border-radius:999px;background:var(--bg-alt);color:var(--fg);font-size:13px;font-weight:700;vertical-align:2px;letter-spacing:0}
+.total-h{font-size:15px;color:var(--fg-sub);font-variant-numeric:tabular-nums}
+.total-h b{color:var(--fg);font-weight:700}
+.filters{display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.total-h{border-top:1px solid var(--line);padding-top:18px;margin-top:auto}
+.price{border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-top:auto}
+.price small{display:block;font-size:13px;color:var(--fg-sub)}
+.price b{font-size:22px;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.price .total{font-size:13px;color:var(--fg-sub);text-align:right;font-variant-numeric:tabular-nums}
+.card .actions{display:flex;flex-direction:column;gap:12px;align-items:stretch}
+.card .actions .btn{width:100%}
+.card .actions .link{text-align:center;font-size:15px}
+.note{margin-top:28px;font-size:14px;color:var(--fg-sub)}
+
+/* heroC */
+.heroC{padding-block:0}
+.heroC .wrap{padding-left:max(4px,calc((100% - 1080px)/2 + 20px));padding-right:max(4px,calc((100% - 1080px)/2 + 20px));max-width:none}
+.c-card{position:relative;isolation:isolate;overflow:hidden;background:#0E1114;color:#F5F5F7;min-height:clamp(560px,88svh,860px)}
+.c-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%;z-index:-2;animation:settle 1.8s cubic-bezier(.2,.7,.2,1) both;transition:filter .5s}
+.c-card::after{content:"";position:absolute;inset:0;z-index:-1;transition:background .5s}
+/* 톤 1: 원본 + 은은한 블루 (기본) */
+.c-card[data-tone="navy"] .c-bg{filter:contrast(1.06) saturate(.92) brightness(.9)}
+.c-card[data-tone="navy"]::before{content:"";position:absolute;inset:0;z-index:-1;background:#205072;mix-blend-mode:color;opacity:.18;pointer-events:none}
+.c-card[data-tone="navy"]::after{background:linear-gradient(180deg,rgba(12,30,46,.5) 0%,rgba(12,30,46,.12) 28%,rgba(12,30,46,.3) 55%,rgba(10,24,38,.85) 100%)}
+/* 톤 2: 원본 컬러 */
+.c-card[data-tone="color"] .c-bg{filter:contrast(1.05) saturate(1.05)}
+.c-card[data-tone="color"]::after{background:linear-gradient(180deg,rgba(0,0,0,.5) 0%,rgba(0,0,0,.18) 28%,rgba(0,0,0,.35) 55%,rgba(0,0,0,.82) 100%)}
+/* 톤 3: 차콜 흑백 */
+.c-card[data-tone="mono"] .c-bg{filter:grayscale(1) contrast(1.35) brightness(.5)}
+.c-card[data-tone="mono"]::after{background:linear-gradient(180deg,rgba(10,10,12,.45) 0%,rgba(10,10,12,0) 30%,rgba(10,10,12,.82) 100%)}
+.tone{position:fixed;left:max(16px,env(safe-area-inset-left,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;display:flex;align-items:center;gap:6px;padding:6px;border-radius:999px;background:rgba(20,22,26,.82);color:#fff;font-size:13px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+/* 배치: 사진 아래 글씨 */
+.c-card[data-layout="below"]{min-height:0;background:var(--bg);color:var(--fg);--ph:clamp(380px,60svh,620px)}
+.c-card[data-layout="below"] .c-bg{position:relative;inset:auto;display:block;height:var(--ph)}
+.c-card[data-layout="below"] .c-bg{object-position:62% 45%}
+@media (max-width:620px){.c-card[data-layout="below"] .c-bg{object-position:86% 45%}}
+.c-card[data-layout="below"]::before,.c-card[data-layout="below"]::after{bottom:auto;height:var(--ph)}
+.c-card[data-layout="below"][data-tone]::after{background:none}
+.c-card[data-layout="below"] .c-in{min-height:0;padding-top:64px;padding-bottom:16px}
+.c-card[data-layout="below"] .megaC{color:var(--fg)}
+.c-card[data-layout="below"] .c-side p{color:var(--fg-sub)}
+.c-card[data-layout="below"] .c-btn{background:var(--brand);color:var(--brand-ink)}
+.c-card[data-layout="below"] .c-link{color:var(--brand);opacity:1}
+.c-card[data-layout="below"] .c-btn:focus-visible,.c-card[data-layout="below"] .c-link:focus-visible{outline-color:var(--brand)}
+@media (max-width:860px){.c-card[data-layout="below"]{--ph:clamp(280px,52svh,420px)}.c-card[data-layout="below"] .c-in{padding-top:40px}}
+.tone{flex-direction:column;align-items:stretch;border-radius:22px;max-width:calc(100% - 32px)}
+.tg{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.tone span{padding:0 8px 0 10px;opacity:.7;min-width:3.2em}
+.tone button{min-height:32px;padding:0 14px;border-radius:999px;border:0;background:transparent;color:#fff;font:inherit;font-weight:600;cursor:pointer}
+.tone button[aria-pressed="true"]{background:#fff;color:#111}
+@keyframes settle{from{transform:scale(1.06)}to{transform:scale(1)}}
+.c-word{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);z-index:-1;font-size:16.5vw;font-weight:800;letter-spacing:-.05em;line-height:1;color:rgba(255,255,255,.09);white-space:nowrap;pointer-events:none;user-select:none}
+.c-in{position:relative;min-height:inherit;display:flex;flex-direction:column;justify-content:flex-end;gap:48px;padding:160px max(24px,env(safe-area-inset-right,0px)) clamp(72px,9vw,128px) max(24px,env(safe-area-inset-left,0px));max-width:1128px;margin:0 auto}
+.c-list{list-style:none;margin:72px 0 0;padding:0;display:flex;flex-direction:column;gap:4px;font-size:14px;color:rgba(255,255,255,.82)}
+.c-list li{display:flex;gap:10px}
+.c-list li span{color:rgba(255,255,255,.5);min-width:3.2em}
+.c-bottom{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:32px 56px;align-items:end}
+.heroC .tick{color:rgba(255,255,255,.75)}
+.heroC .tick .hl{color:#9CC6E6}
+.megaC{font-size:clamp(44px,6.2vw,84px);line-height:.95;font-weight:800;letter-spacing:-.06em;margin:0 0 0 -.04em;white-space:nowrap;color:#FFFFFF}
+.c-side{display:flex;flex-direction:column;gap:24px;padding-bottom:12px}
+.c-side p{margin:0;font-size:19px;line-height:1.5;color:rgba(255,255,255,.88)}
+.c-cta{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+.c-btn{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 24px;border-radius:999px;background:#FFFFFF;color:#0E1114;font-weight:700;font-size:16px;text-decoration:none}
+.c-btn span{transition:transform .25s}
+.c-btn:hover span{transform:translateY(3px)}
+.c-btn:hover span.r{transform:translateX(4px)}
+.c-link{color:#FFFFFF;font-weight:600;font-size:16px;text-decoration:none;opacity:.85}
+.c-link:hover{opacity:1;text-decoration:underline}
+.c-btn:focus-visible,.c-link:focus-visible{outline-color:#FFFFFF}
+.heroC .b-addr{margin:40px 0 0;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:flex-start;color:var(--fg-sub);flex-wrap:wrap;gap:4px 12px;font-size:15px}
+.heroC .b-addr b{font-size:15px;font-weight:700;color:var(--fg)}
+@media (prefers-reduced-motion:reduce){.c-bg{animation:none}}
+@media (max-width:860px){
+  .heroC{padding-block:12px 72px}
+  .c-card{min-height:clamp(520px,82svh,720px)}
+  .c-word{font-size:30vw;top:30%}
+  .c-list{margin-top:8px}
+  .c-bottom{grid-template-columns:1fr}
+  .megaC{font-size:clamp(38px,11.5vw,64px)}
+  .c-side p{font-size:17px}
+}
+
+/* list */
+.month{display:flex;align-items:baseline;gap:12px;padding:64px 0 14px;font-size:14px;font-weight:700;color:var(--fg-sub);letter-spacing:.04em;border-bottom:1px solid var(--fg)}
+.month:first-child{padding-top:0}
+.month em{font-style:normal;font-weight:500}
+.row-c{position:relative;display:grid;grid-template-columns:180px minmax(0,1fr) 320px 56px;gap:32px;align-items:center;padding:40px 20px;margin:0 -20px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--fg);isolation:isolate;transition:color .25s}
+.row-c:nth-of-type(even){background:color-mix(in srgb,var(--brand) 5%,var(--bg))}
+.row-c:nth-of-type(even) .slot-chip{background:var(--bg)}
+.row-c::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--brand);border-radius:0;transform:scaleY(0);transform-origin:bottom;transition:transform .3s cubic-bezier(.2,.7,.2,1)}
+.date-big{white-space:nowrap;font-size:68px;font-weight:300;letter-spacing:-.05em;line-height:1;font-variant-numeric:tabular-nums}
+.date-big small{display:block;font-size:14px;font-weight:600;letter-spacing:0;margin-top:8px;color:var(--fg-sub)}
+.r-title{display:flex;flex-direction:column;gap:6px;min-width:0}
+.r-title b{font-size:30px;font-weight:800;letter-spacing:-.035em;line-height:1.22}
+.r-title span{font-size:16px;color:var(--fg-sub)}
+.r-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:4px}
+.r-meta{display:grid;grid-template-columns:1fr 1fr;gap:0;font-variant-numeric:tabular-nums}
+.st{display:flex;flex-direction:column;gap:3px;padding-left:18px;border-left:1px solid var(--line);min-width:0}
+.st small{font-size:13px;font-weight:500;color:var(--fg-sub)}
+.st b{font-size:17px;font-weight:700;letter-spacing:-.02em;white-space:nowrap}
+.st span{font-size:13px;color:var(--fg-sub)}
+.arrow{width:56px;height:56px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-size:22px;transition:transform .3s, background .3s, border-color .3s}
+.cta-m{display:none}
+@media (hover:hover) and (min-width:621px){
+  .row-c:hover{color:var(--brand-ink)}
+  .row-c:hover::before{transform:scaleY(1)}
+  .row-c:hover .date-big small,.row-c:hover .r-title span,.row-c:hover .st small,.row-c:hover .st span{color:var(--brand-ink);opacity:.75}
+  .row-c:hover .st{border-left-color:rgba(255,255,255,.25)}
+  .row-c:hover .arrow{transform:translateX(6px);border-color:transparent;background:var(--brand-ink);color:var(--brand)}
+  .row-c:hover .badge,.row-c:hover .slot-chip{background:rgba(255,255,255,.18);color:var(--brand-ink)}
+}
+.row-c:focus-visible{outline-offset:-3px}
+@media (max-width:980px){.row-c{grid-template-columns:150px minmax(0,1fr) 56px}.r-meta{grid-column:2/3}.date-big{font-size:52px}.arrow{grid-row:1;grid-column:3}}
+@media (max-width:620px){
+  .row-c{grid-template-columns:minmax(0,1fr);gap:20px;padding:32px 16px;margin:0 -16px;align-items:start}
+  .row-c::before{display:none}
+  .date-big{display:none}
+  .r-title b{font-size:25px}
+  .r-title span{font-size:14px}
+  .r-tags .badge,.r-tags .slot-chip{height:24px;font-size:12px;padding:0 10px}
+  .r-meta{grid-column:1/-1;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .st:first-child{padding-left:0;border-left:0}
+  .st b{font-size:16px}
+  .arrow{display:none}
+  .cta-m{display:flex;grid-column:1/-1;margin-top:-2px}
+  .cta-m .btn{min-height:0;padding:10px 16px;font-size:14px;gap:6px}
+  .cta-m .btn::after{content:"→";font-weight:700}
+}
+@media (max-width:360px){.r-meta{grid-template-columns:1fr;gap:12px}.st{padding-left:0;border-left:0}}
+@media (hover:none),(max-width:620px){
+  .row-c{-webkit-tap-highlight-color:transparent;transition:background .15s}
+  .row-c:active{background:var(--brand-soft)}
+  .row-c:active .r-title b,.row-c:active .date-big{color:var(--brand)}
+}
+@media (prefers-reduced-motion:reduce){.row-c::before,.arrow{transition:none}}
+
+/* steps */
+.metabar{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-bottom:14px;margin-bottom:40px;border-bottom:1px solid var(--fg);font-size:14px;font-weight:700;color:var(--fg)}
+.metabar span:last-child{color:var(--fg-sub);font-weight:500}
+
+.sec-top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-bottom:20px;border-bottom:1px solid var(--fg)}
+.sec-top h2{font-size:clamp(32px,4.4vw,48px);font-weight:800;line-height:1.2}
+.sec-top span{font-size:14px;font-weight:600;color:var(--fg-sub)}
+
+.steps{padding-block:144px;background:var(--bg-alt)}
+.flow{list-style:none;margin:0;padding:0}
+.flow li{display:grid;grid-template-columns:120px 260px minmax(0,1fr) 180px;gap:32px;align-items:center;padding:40px 0;border-bottom:1px solid var(--line)}
+.flow .no{font-size:56px;font-weight:300;letter-spacing:-.05em;line-height:1;color:var(--brand);font-variant-numeric:tabular-nums}
+.flow b{font-size:22px;font-weight:800;letter-spacing:-.02em}
+.flow p{color:var(--fg-sub);font-size:16px}
+.pill{justify-self:end;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 20px;border-radius:999px;background:var(--brand);color:var(--brand-ink);font-size:15px;font-weight:700;text-decoration:none;white-space:nowrap}
+.pill.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+.pill span{transition:transform .25s}
+.pill:hover span{transform:translateX(4px)}
+.pill.ghost:hover span{transform:translateY(-3px)}
+.tip{display:grid;grid-template-columns:120px minmax(0,1fr);gap:32px;padding-top:40px;font-size:16px;color:var(--fg-sub)}
+.tip b{color:var(--fg);font-size:14px;letter-spacing:.04em}
+@media (max-width:900px){.flow li{grid-template-columns:80px minmax(0,1fr);gap:8px 20px}.flow li>p,.flow li>.pill,.flow li>span:last-child{grid-column:2}.flow .pill{justify-self:start;margin-top:8px}.flow .no{font-size:44px;grid-row:span 3;align-self:start}.tip{grid-template-columns:80px minmax(0,1fr);gap:20px}}
+@media (max-width:620px){.steps{padding-block:88px}.flow li{grid-template-columns:56px minmax(0,1fr)}.flow .no{font-size:36px}.tip{grid-template-columns:1fr;gap:6px}}
+
+.contact{background:var(--brand);color:var(--brand-ink);padding-block:128px 112px}
+.c-top{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px 16px;padding-bottom:20px;border-bottom:1px solid color-mix(in srgb,var(--brand-ink) 35%,transparent)}
+.c-top h2{font-size:clamp(26px,3.4vw,36px);font-weight:800}
+.c-top span{opacity:.8}
+.tel-mega{display:block;margin:36px 0 28px;font-size:clamp(40px,6.4vw,72px);font-weight:700;letter-spacing:-.035em;line-height:1;color:var(--brand-ink);text-decoration:none;font-variant-numeric:tabular-nums;white-space:nowrap;transition:letter-spacing .4s}
+@media (hover:hover){.tel-mega:hover{letter-spacing:-.015em}}
+.tel-mega:focus-visible{outline-color:var(--brand-ink)}
+.c-foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 24px;font-size:14px;opacity:.8}
+@media (max-width:620px){.contact{padding-block:88px}}
+footer{padding-block:40px 64px;font-size:13px;color:var(--fg-sub)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
+</style>
+
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a href="#top" aria-label="온코딩컴퓨터학원 처음으로"><span class="logo" role="img" aria-label="온코딩컴퓨터학원"></span></a>
+    <nav aria-label="바로가기">
+      <a href="#courses">개강 과정</a>
+      <a href="#steps" class="opt">수강신청 절차</a>
+      <a href="#contact">문의</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="heroC">
+    <div class="c-card" id="c-card" data-tone="color" data-layout="below">
+      <img class="c-bg" src="hero.jpg" alt="COMPUTER ACADEMY ONCODING 사인이 있는 학원 입구 벽">
+      <div class="c-in">
+        <div class="c-bottom">
+          <div>
+            <h1 class="megaC">개강 과정 안내</h1>
+          </div>
+          <div class="c-side">
+            <p>모집 중인 과정의 훈련기간과 수업 시간을 확인하고, 고용24에서 신청하세요.</p>
+            <div class="c-cta">
+              <a class="c-btn" href="https://www.work24.go.kr/hr/h/a/1100/selectIssuGudn.do" target="_blank" rel="noopener">카드 발급 신청 <span aria-hidden="true" class="r">→</span></a>
+              <a class="c-link" href="#steps">수강신청 절차 ›</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="courses" id="courses">
+    <div class="wrap">
+      <h2 class="sr-only">모집 중인 과정</h2>
+      <div class="list" id="grid"></div>
+      <p class="note">본인부담액은 카드 유형과 대상에 따라 다릅니다. 고용24 신청 화면에서 확인하세요.</p>
+    </div>
+  </section>
+
+  <section class="steps" id="steps">
+    <div class="wrap">
+      <div class="sec-top"><h2>수강신청 절차</h2></div>
+      <ol class="flow">
+        <li><span class="no">01</span><b>국민내일배움카드 발급</b><p>고용24에서 카드를 신청하세요. 이미 있다면 2단계로 넘어갑니다.</p>
+          <a class="pill" href="https://www.work24.go.kr/hr/h/a/1100/selectIssuGudn.do" target="_blank" rel="noopener">카드 발급 신청 <span aria-hidden="true">→</span></a></li>
+        <li><span class="no">02</span><b>과정 확인</b><p>훈련기간과 수업 시간을 확인하세요.</p><a class="pill ghost" href="#courses">과정 보기 <span aria-hidden="true">↑</span></a></li>
+        <li><span class="no">03</span><b>고용24 수강신청</b><p>과정의 [고용24에서 신청하기]에서 신청하고 본인부담금을 결제하세요.</p><span></span></li>
+        <li><span class="no">04</span><b>수업 시작</b><p>개강일부터 수업에 참여하세요.</p><span></span></li>
+      </ol>
+      <p class="tip"><b>참고</b><span>카드는 미리 신청하세요. 심사와 승인을 거쳐 실물 카드를 은행이나 우편으로 받기까지 시간이 걸립니다.</span></p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="c-top"><h2>수강 문의</h2><span>상담이 필요하시면 전화 주세요. 친절하게 안내해 드리겠습니다.</span></div>
+      <a class="tel-mega" href="tel:0512942202">051-294-2202</a>
+      <div class="c-foot"><span>부산 강서구 명지국제8로 234 3층 온코딩컴퓨터학원</span></div>
+    </div>
+  </section>
+</main>
+
+
+<footer>
+  <div class="wrap">
+    <span>온코딩컴퓨터학원 · 부산 강서구</span>
+    <span id="updated"></span>
+  </div>
+</footer>
+
+<script>
+const SRC_DATE = "2026-10-21";
+const INST = "500042799200";
+let COURSES = [];
+const W = ["일","월","화","수","목","금","토"];
+const d = s => { const [y,m,dd] = s.split("-").map(Number); return new Date(y, m-1, dd); };
+const md = s => { const x = d(s); return `${x.getMonth()+1}.${String(x.getDate()).padStart(2,"0")}`; };
+const weeks = c => Math.ceil((d(c.end) - d(c.start)) / 864e5 / 7 + 1/7);
+const url = c => `https://www.work24.go.kr/hr/a/a/3100/selectTracseDetl.do?tracseId=${c.id}&tracseTme=${c.tme}&crseTracseSe=C0061&trainstCstmrId=${INST}`;
+const today = (() => { const t = new Date(); return new Date(t.getFullYear(), t.getMonth(), t.getDate()); })();
+const dday = s => Math.round((d(s) - today) / 864e5);
+
+
+async function boot(){
+  try { const r = await fetch("courses.json", { cache: "no-store" }); COURSES = (await r.json()).courses; } catch (e) { COURSES = []; }
+var live = COURSES.filter(c => dday(c.start) >= 0).sort((a,b) => d(a.start) - d(b.start));
+
+function row(c){
+  const n = dday(c.start);
+  const soon = n <= 7;
+  const label = n === 0 ? "오늘 개강" : soon ? `마감 임박 · D-${n}` : `모집중 · D-${n}`;
+  return `<a class="row-c" href="${url(c)}" target="_blank" rel="noopener" aria-label="${c.name} ${c.sub} 고용24에서 신청하기">
+    <div class="date-big">${md(c.start)}</div>
+    <div class="r-title">
+      <div class="r-tags"><span class="badge${soon ? " hot" : ""}">${label}</span><span class="slot-chip">${c.slot}</span></div>
+      <b>${c.name}</b><span>${c.sub}</span>
+    </div>
+    <div class="r-meta">
+      <div class="st"><small>훈련기간</small><b>${md(c.start)} ~ ${md(c.end)}</b><span>${c.days}일 · 총 ${c.hours}시간</span></div>
+      <div class="st"><small>수업 시간</small><b>${c.time.replace(" – ", " ~ ")}</b><span>${c.dow}</span></div>
+    </div>
+    <span class="arrow" aria-hidden="true">→</span>
+    <span class="cta-m"><span class="btn">고용24에서 신청하기</span></span>
+  </a>`;
+}
+function card(c){
+  const n = dday(c.start);
+  const soon = n <= 7;
+  const label = n === 0 ? "오늘 개강" : soon ? `마감 임박 · D-${n}` : `모집중 · D-${n}`;
+  return `<article class="card" data-f="${c.f}">
+    <div class="card-top"><span class="badge${soon ? " hot" : ""}">${label}</span><span class="slot-chip">${c.slot}</span></div>
+    <h3>${c.name}<span class="sub">${c.sub}</span></h3>
+    <dl class="spec">
+      <dt>훈련기간</dt><dd>${md(c.start)}(${W[d(c.start).getDay()]}) – ${md(c.end)}(${W[d(c.end).getDay()]})</dd>
+      <dt>수업 시간</dt><dd>${c.dow} ${c.time}</dd>
+      <dt>총 시간</dt><dd>${c.days}일 · ${c.hours}시간</dd>
+    </dl>
+    <div class="actions">
+      <a class="btn" href="${url(c)}" target="_blank" rel="noopener">고용24에서 신청하기</a>
+    </div>
+  </article>`;
+}
+
+const sel = { f: "all", s: "all" };
+function render(){
+  const list = live.filter(c => (sel.f === "all" || c.f === sel.f) && (sel.s === "all" || c.slot === sel.s));
+  const grid = document.getElementById("grid");
+  let html = "", cur = "";
+  for (const c of list) {
+    const x = d(c.start), key = `${x.getFullYear()}-${x.getMonth()}`;
+    if (key !== cur) { cur = key; const cnt = list.filter(y => { const z = d(y.start); return z.getFullYear() === x.getFullYear() && z.getMonth() === x.getMonth(); }).length;
+      html += `<div class="month">${x.getFullYear()}년 ${x.getMonth()+1}월</div>`; }
+    html += row(c);
+  }
+  grid.innerHTML = list.length ? html : `<p class="note">지금 모집 중인 과정이 없습니다. 다음 개강 일정은 전화로 문의하세요.</p>`;
+}
+render();
+
+const hdr = document.querySelector("header");
+const onScroll = () => { const s = window.scrollY > 40; hdr.classList.toggle("solid", s); document.body.classList.toggle("scrolled", s); };
+addEventListener("scroll", onScroll, { passive: true }); onScroll();
+
+document.getElementById("updated").textContent = `과정 정보 출처: 고용24`;
+
+}
+boot();
+</script>
+
+</body>
+</html>
