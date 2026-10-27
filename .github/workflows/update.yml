@@ -1,9 +1,9 @@
 name: 개강 과정 갱신
 
+# 고용24가 GitHub 서버(해외) 접속을 막아서 자동 예약은 껐습니다.
+# 한국 IP의 컴퓨터(self-hosted runner)를 연결하면 schedule을 다시 켤 수 있습니다.
 on:
-  schedule:
-    - cron: "17 21 * * *"   # 매일 오전 6:17 (한국시간)
-  workflow_dispatch:         # Actions 탭에서 'Run workflow'로 바로 실행
+  workflow_dispatch:
 
 permissions:
   contents: write
