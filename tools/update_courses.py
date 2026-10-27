@@ -2,7 +2,7 @@
 """고용24에서 학원 국비과정을 읽어 courses.json을 만든다 (표준 라이브러리만 사용).
 사용: python3 update_courses.py [출력경로]   기본 출력: ../courses.json
 """
-import urllib.request, urllib.parse, http.cookiejar, datetime, re, json, sys, os, html as H
+import urllib.request, urllib.parse, http.cookiejar, datetime, re, json, sys, os, time, html as H
 
 INST_NAME = "온코딩컴퓨터학원"
 INST_ID = "500042799200"
@@ -24,6 +24,7 @@ op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))
 op.addheaders = [("User-Agent", "Mozilla/5.0 (compatible; course-updater)")]
 
 def get(url, data=None):
+    time.sleep(1.5)  # 고용24 서버 부담을 줄이려고 요청마다 잠깐 쉼
     if data is not None:
         data = urllib.parse.urlencode(data).encode()
     with op.open(url, data=data, timeout=40) as r:
