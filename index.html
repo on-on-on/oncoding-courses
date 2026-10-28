@@ -382,7 +382,7 @@ var live = COURSES.filter(c => dday(c.start) >= 0).sort((a,b) => d(a.start) - d(
 function row(c){
   const n = dday(c.start);
   const soon = n <= 7;
-  const label = n === 0 ? "오늘 개강" : soon ? `마감 임박 · D-${n}` : `모집중 · D-${n}`;
+  const label = n === 0 ? "오늘 개강" : soon ? `곧 개강 · D-${n}` : `모집중 · D-${n}`;
   return `<a class="row-c" href="${url(c)}" target="_blank" rel="noopener" aria-label="${c.name} ${c.sub} 고용24에서 신청하기">
     <div class="date-big">${md(c.start)}</div>
     <div class="r-title">
@@ -400,7 +400,7 @@ function row(c){
 function card(c){
   const n = dday(c.start);
   const soon = n <= 7;
-  const label = n === 0 ? "오늘 개강" : soon ? `마감 임박 · D-${n}` : `모집중 · D-${n}`;
+  const label = n === 0 ? "오늘 개강" : soon ? `곧 개강 · D-${n}` : `모집중 · D-${n}`;
   return `<article class="card" data-f="${c.f}">
     <div class="card-top"><span class="badge${soon ? " hot" : ""}">${label}</span><span class="slot-chip">${c.slot}</span></div>
     <h3>${c.name}<span class="sub">${c.sub}</span></h3>
