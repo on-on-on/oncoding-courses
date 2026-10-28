@@ -2,6 +2,14 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<!-- 선생님 기기 통계 제외: 주소 뒤에 ?noga=1 로 한 번 접속(해제는 ?noga=0) -->
+<script>
+(function(){try{var q=location.search,d='; domain=.oncoding.co.kr; path=/; SameSite=Lax';
+ if(/[?&]noga=1/.test(q))document.cookie='noga=1; max-age=63072000'+d;
+ if(/[?&]noga=0/.test(q))document.cookie='noga=; max-age=0'+d;
+ if(/(^|; )noga=1/.test(document.cookie)){window['ga-disable-G-DPHFYXY52M']=true;window['ga-disable-G-LP5TG59CVL']=true;}
+}catch(e){}})();
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LP5TG59CVL"></script>
 <script>
