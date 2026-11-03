@@ -1,8 +1,9 @@
 name: 개강 과정 자동 갱신
 
+# 매일 자동 실행은 꺼 둠 (2026-11-03). 필요하면 아래 schedule 두 줄의 # 를 지우세요.
 on:
-  schedule:
-    - cron: "0 21 * * *"   # 매일 한국시간 오전 6시
+  # schedule:
+  #   - cron: "0 21 * * *"   # 매일 한국시간 오전 6시
   workflow_dispatch:        # 수동 실행 버튼
 
 permissions:
